@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{25C47201-B205-48E9-B8A0-254C870E8552}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{F6041C2E-9AA8-4D3C-980A-B9B9A40C5859}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -230,6 +230,12 @@
                       dataType="wstr"
                       length="200"
                       name="CustomMemberOptions" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[test_git_column]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="test_git_column" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -628,6 +634,10 @@
           Size="163,42"
           Id="Package\Execute SQL Task"
           TopLeft="410,241" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Execute SQL Task 1"
+          TopLeft="320,75" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="482.5,189">
@@ -662,10 +672,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Execute SQL Task 1"
-          TopLeft="320,75" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="406,117">
@@ -754,7 +760,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -767,7 +773,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
