@@ -8,6 +8,9 @@
     [Operator]                      NVARCHAR (50)  NULL,
     [CustomMembers]                 NVARCHAR (300) NULL,
     [ValueType]                     NVARCHAR (50)  NULL,
-    [CustomMemberOptions]           NVARCHAR (200) NULL
+    [CustomMemberOptions]           NVARCHAR (200) NULL,
+    [test_git_column]               VARCHAR (50)   NULL
 );
+
+
 
